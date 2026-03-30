@@ -1,0 +1,101 @@
+body {
+    font-family: Arial;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Priority Color Badges */
+.priority-high {
+    background-color: #dc3545; 
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.priority-medium {
+    background-color: #ffbf00; 
+    color: #000000; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.priority-low {
+    background-color: #28a745; 
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Daily Report Styles */
+.report-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.report-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.report-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.report-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.report-card li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-card li:last-child {
+    border-bottom: none;
+}
