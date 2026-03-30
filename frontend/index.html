@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Task Manager</h1>
+
+<div class="form">
+    <input type="text" id="title" placeholder="Task title">
+    <input type="date" id="due_date">
+    
+    <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+
+    <button onclick="createTask()">Add Task</button>
+</div>
+
+<hr>
+
+<div style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+    <h2>Daily Task Report</h2>
+    <div class="form" style="margin-bottom: 0;">
+        <input type="date" id="report_date">
+        <button onclick="generateReport()" style="background-color: #17a2b8; color: white; border: none; border-radius: 4px;">Get Report</button>
+    </div>
+    <div id="reportContainer" style="display: none; margin-top: 15px;">
+        </div>
+</div>
+
+<select id="filter" onchange="loadTasks()">
+    <option value="">All</option>
+    <option value="pending">Pending</option>
+    <option value="in_progress">In Progress</option>
+    <option value="done">Done</option>
+</select>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tasks"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
